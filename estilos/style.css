@@ -3,3 +3,172 @@
     Verde: #49a09d
     Lilas: #5f2c82
 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:#5f2c82 ;
+}
+main{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 515px;
+    overflow: hidden;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+#imagem{
+    height: 200px;
+    background-image: url(../img/neve.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#formulario{
+    display: block;
+   padding: 10px;
+}
+
+#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario > p{
+    font-size: 0.8em;
+}
+.campo{
+    background-color:#5f2c82 ;
+    border: 2px solid #5f2c82;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+.campo > label > span{
+    height: 70px;
+    width: 40px;
+    padding: 5px;
+    color: white;
+    font-size: 1.9em;
+}
+.campo > input{
+    background-color: #94cfcd;
+    width: calc(100% - 45px);
+    height: 70%;
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 1em;
+    
+}
+#entrar{
+    width: 100%;
+    color: white;
+    background-color: #53aaa7;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+#entrar:hover{
+    background-color: rgb(36, 124, 121);
+}
+
+.ssenha{
+    width: 100%;
+    border: 1px solid #53aaa7;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+.ssenha > a{
+    text-decoration: none;
+    color: rgb(25, 88, 86);
+    
+}
+
+
+.ssenha > a > span{
+    margin-top: 5%;
+    margin-left: 2px;
+    font-size: 0.8em;
+}
+
+.ssenha:hover{
+    background-color:#53aaa7; ;
+}
+
+@media screen and (min-width: 768px) and (max-width:992px){
+    
+    body{
+        background:linear-gradient(#5f2c82, #53aaa7);}
+    #login{
+        width: 80vw;
+        height: 280px;
+        display: flex;
+    }
+    #imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    #formulario{
+        float: right;
+        width: 70%;
+    }
+
+    .ssenha > a > span{
+        margin-top: 12px;
+        
+    }}
+    @media screen and (min-width: 992px){
+        body{
+            background:linear-gradient(#5f2c82, #53aaa7);
+        }
+        #login{
+            
+            width: 950px;
+            height: 350px;
+        }
+        #imagem{
+            float: right;
+            width: 50%;
+            height: 100%;
+        }
+        #formulario{
+            width: 47%;
+            height: 100%;
+            margin-top: 2%;
+        }
+
+        #formulario > p {
+            margin-bottom: 24px;
+        }
+        #formulario > form{
+            display: grid;
+        }
+        .ssenha > a > span{
+            margin-top: 3%;
+            
+        }
+    }
